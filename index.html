@@ -45,7 +45,7 @@ footer {
   }
 }
 
-.gradient {
+.gradient,.main {
   --size: 250px;
   --speed: 50s;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
@@ -59,20 +59,12 @@ footer {
 }
 
 @media (min-width: 720px) {
-  .gradient {
+  .gradient,.main {
     --size: 500px;
   }
 }
 
-body {
-  background-color: #222;
-  position: absolute;
-  inset: 0;
-  display: flex;
-  place-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+
 
 /* This is just to transition when you change the viewport size. */
 * {
