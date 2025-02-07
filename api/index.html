@@ -1,14 +1,218 @@
-<script>
-  fetch('https://classtime.rf.gd/api/fetch-data.php')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json(); // Convert response to JSON
-    })
-    .then(data => {
-        console.log(data); // Log JSON data to console
-    })
-    .catch(error => console.error('Error fetching data:', error));
-
-</script>
+<pre>[
+  {
+    "id": "3",
+    "department": "IT",
+    "class-name": "A.I",
+    "class-location": "TF-17",
+    "class-day": "MONDAY",
+    "class-time": "11:25 TO 12:25",
+    "college": "GMIT"
+  },
+  {
+    "id": "1",
+    "department": "IT",
+    "class-name": "SE",
+    "class-location": "TF-17",
+    "class-day": "MONDAY",
+    "class-time": "10:25 TO 11:25",
+    "college": "GMIT"
+  },
+  {
+    "id": "4",
+    "department": "IT",
+    "class-name": "MAD",
+    "class-location": "GF-05",
+    "class-day": "MONDAY",
+    "class-time": "12:45 TO 01:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "5",
+    "department": "IT",
+    "class-name": "DWDM",
+    "class-location": "GF-05",
+    "class-day": "MONDAY",
+    "class-time": "01:45 TO 2:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "6",
+    "department": "IT",
+    "class-name": "CNS-LAB",
+    "class-location": "FF-32",
+    "class-day": "MONDAY",
+    "class-time": "03:10 TO 05:30",
+    "college": "GMIT"
+  },
+  {
+    "id": "7",
+    "department": "IT",
+    "class-name": "DWDM",
+    "class-location": "TF-17",
+    "class-day": "TUESDAY",
+    "class-time": "10:25 TO 11:25",
+    "college": "GMIT"
+  },
+  {
+    "id": "8",
+    "department": "IT",
+    "class-name": "SE",
+    "class-location": "TF-17",
+    "class-day": "TUESDAY",
+    "class-time": "11:25 TO 12:25",
+    "college": "GMIT"
+  },
+  {
+    "id": "9",
+    "department": "IT",
+    "class-name": "MAD-LAB",
+    "class-location": "FF-30",
+    "class-day": "TUESDAY",
+    "class-time": "12:45 TO 2:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "10",
+    "department": "IT",
+    "class-name": "DE-LAB",
+    "class-location": "GF-23",
+    "class-day": "TUESDAY",
+    "class-time": "03:10 TO 05:30",
+    "college": "GMIT"
+  },
+  {
+    "id": "11",
+    "department": "IT",
+    "class-name": "CNS",
+    "class-location": "TF-17",
+    "class-day": "WEDNESDAY",
+    "class-time": "10:25 TO 11:25\r\n",
+    "college": "GMIT"
+  },
+  {
+    "id": "12",
+    "department": "IT",
+    "class-name": "SE",
+    "class-location": "TF-17",
+    "class-day": "WEDNESDAY",
+    "class-time": "11:25 TO 12:25",
+    "college": "GMIT"
+  },
+  {
+    "id": "13",
+    "department": "IT",
+    "class-name": "CPDP",
+    "class-location": "GF-05",
+    "class-day": "WEDNESDAY",
+    "class-time": "12:45 TO 01:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "14",
+    "department": "IT",
+    "class-name": "MAD",
+    "class-location": "GF-05",
+    "class-day": "WEDNESDAY",
+    "class-time": "01:45 TO 2:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "15",
+    "department": "IT",
+    "class-name": "AI-LAB",
+    "class-location": "FF-30",
+    "class-day": "WEDNESDAY",
+    "class-time": "03:10 TO 05:30",
+    "college": "GMIT"
+  },
+  {
+    "id": "16",
+    "department": "IT",
+    "class-name": "SE",
+    "class-location": "TF-17",
+    "class-day": "THURSDAY",
+    "class-time": "10:25 TO 11:25\r\n",
+    "college": "GMIT"
+  },
+  {
+    "id": "17",
+    "department": "IT",
+    "class-name": "CPDP",
+    "class-location": "TF-17",
+    "class-day": "THURSDAY",
+    "class-time": "11:25 TO 12:25",
+    "college": "GMIT"
+  },
+  {
+    "id": "18",
+    "department": "IT",
+    "class-name": "AI",
+    "class-location": "GF-05",
+    "class-day": "THURSDAY",
+    "class-time": "12:45 TO 01:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "19",
+    "department": "IT",
+    "class-name": "CNS",
+    "class-location": "GF-05",
+    "class-day": "THURSDAY",
+    "class-time": "01:45 TO 2:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "20",
+    "department": "IT",
+    "class-name": "SE-LAB",
+    "class-location": "FF-31",
+    "class-day": "THURSDAY",
+    "class-time": "03:10 TO 05:30",
+    "college": "GMIT"
+  },
+  {
+    "id": "21",
+    "department": "IT",
+    "class-name": "DWDM",
+    "class-location": "TF-17",
+    "class-day": "FRIDAY",
+    "class-time": "\r\n10:25 TO 11:25\r\n",
+    "college": "GMIT"
+  },
+  {
+    "id": "22",
+    "department": "IT",
+    "class-name": "MAD",
+    "class-location": "TF-17",
+    "class-day": "FRIDAY",
+    "class-time": "11:25 TO 12:25",
+    "college": "GMIT"
+  },
+  {
+    "id": "23",
+    "department": "IT",
+    "class-name": "CNS",
+    "class-location": "GF-05",
+    "class-day": "FRIDAY",
+    "class-time": "12:45 TO 01:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "24",
+    "department": "IT",
+    "class-name": "AI",
+    "class-location": "GF-05",
+    "class-day": "FRIDAY",
+    "class-time": "01:45 TO 2:45",
+    "college": "GMIT"
+  },
+  {
+    "id": "25",
+    "department": "IT",
+    "class-name": "DWDM-LAB",
+    "class-location": "SF-36",
+    "class-day": "FRIDAY",
+    "class-time": "03:10 TO 05:30",
+    "college": "GMIT"
+  }
+]
