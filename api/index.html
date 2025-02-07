@@ -1,0 +1,14 @@
+<script>
+  fetch('https://classtime.rf.gd/api/fetch-data.php')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json(); // Convert response to JSON
+    })
+    .then(data => {
+        console.log(data); // Log JSON data to console
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+</script>
